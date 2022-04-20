@@ -103,11 +103,8 @@ function saveClick(){
 
 if(canvas){
   canvas.addEventListener("mousemove", moveMouse);
-  canvas.addEventListener("touchmove", moveMouse);
   canvas.addEventListener("mousedown", startPainting);
-  canvas.addEventListener("touchend", startPainting);
   canvas.addEventListener("mouseup", stopPainting);
-  canvas.addEventListener("touchstart", stopPainting);
   canvas.addEventListener("mouseleave", stopPainting);
   canvas.addEventListener("click", canvasClick);
   canvas.addEventListener("contextmenu", handleCTX);
